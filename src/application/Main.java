@@ -15,11 +15,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage){
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
 			Scene scene = new Scene(root);
 			
 			String css = this.getClass().getResource("application.css").toExternalForm();
-			
 			scene.getStylesheets().add(css);
 			
 			Image titleicon = new Image("misato mp3 player.png");
