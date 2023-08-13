@@ -23,7 +23,7 @@ public class Main extends Application {
 		Group root = new Group();
 		Scene scene = new Scene(root, Color.BLACK);
 		
-		Image icon = new Image("misato transparent.png");
+		Image icon = new Image("misato mp3 player.png");
 		
 		
 		stage.getIcons().add(icon);
@@ -33,7 +33,7 @@ public class Main extends Application {
 //		stage.setX(300);
 //		stage.setY(70);
 //		stage.setResizable(false);
-		stage.setFullScreen(true);
+//		stage.setFullScreen(true);
 		
 		stage.setScene(scene);
 		stage.show();
