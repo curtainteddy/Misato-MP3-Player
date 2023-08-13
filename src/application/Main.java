@@ -18,6 +18,9 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root);
 			
+			String css = this.getClass().getResource("application.css").toExternalForm();
+			
+			scene.getStylesheets().add(css);
 			
 			Image titleicon = new Image("misato mp3 player.png");
 			primaryStage.getIcons().add(titleicon);
