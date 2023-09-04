@@ -1,7 +1,9 @@
 package application;
 
 import java.io.IOException;
+import java.net.URL;
 
+import javafx.application.HostServices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -13,8 +15,7 @@ public class SceneController {
 
 	private Stage stage;
 	private Scene scene;
-	private Parent root;
-	
+
 	public void switchToScene1(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -33,4 +34,7 @@ public class SceneController {
 		stage.setScene(scene);
 		stage.show();
 	}
+	
+
 }
+
